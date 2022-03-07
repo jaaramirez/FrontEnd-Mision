@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levantar pedido</title>
+</head> 
+<body>
+    <h1>Aquí se hace el pedido</h1>
+
+    <form action="pedido.js">
+        <label for="Nombre"> Danos tu nombre, Constelación</label><br>
+        <input type="text" id="Nombre" name="Nombre" placeholder="Nombre">
+    
+        <br><br>
+
+        <label for="tel1"> Teléfono de contacto</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10">
+
+        <br><br>
+
+        <label for="correo1"> Correo Electronico</label><br>
+        <input type="email" id="correo1" name="correo1" placeholder="Correo">
+
+        <br><br>
+    
+        
+        <label for="Fecha de evento"> Agrega la fecha de tu evento</label><br>
+        <input type="date" name="Fecha de evento" step="1" min="2022-01-01" max="2024-12-31" value="?php echo date" "Y-m-d"> 
+
+        <br><br>
+
+        <label for="Invitados"> Agrega el número de invitados al evento</label><br>
+        <input type="number" name="Invitados" id="Invitados">
+
+        <br>
+
+        <p>¿Recoger en tienda o enviar a domicilio?</p>
+        <input type="radio" id="Tienda" name="tiendaodomicilio" value="Tienda">
+        <label for="Tienda">Tienda</label><br>
+        <input type="radio" id="Domicilo" name="tiendaodomicilio" value="Domicilio">
+        <label for="Domicilio">Domicilio</label><br>
+
+        <p>¿Pastel de que?</p>
+        <input type="checkbox" id="mercurio" name="mercurio" value="Mercurio">
+        <label for="mercurio">Mercurio</label>
+        <input type="number" id="mercuriocuantos" name="mercuriocuantos"><br>
+
+        <input type="checkbox" id="venus" name="venus" value="venus">
+        <label for="venus">Venus</label>
+        <input type="number" id="venuscuantos" name="venuscuantos"><br>
+
+        <input type="checkbox" id="tierra" name="tierra" value="tierra">
+        <label for="tierra">Tierra</label>
+        <input type="number" id="tierracuantos" name="tierracuantos"><br>
+
+        <input type="checkbox" id="Marte" name="marte" value="Marte">
+        <label for="marte">Marte</label>
+        <input type="number" id="martecuantos" name="martecuantos"><br>
+
+        <input type="checkbox" id="Jupiter" name="jupiter" value="Jupiter">
+        <label for="Jupiter">Jupiter</label>
+        <input type="number" id="jupitercuantos" name="jupitercuantos"><br>
+
+        <input type="checkbox" id="saturno" name="saturno" value="Saturno">
+        <label for="saturno">Saturno</label>
+        <input type="number" id="Saturno" name="saturnocuantos"><br>
+
+        <input type="checkbox" id="urano" name="urano" value="Urano">
+        <label for="urano">Urano</label>
+        <input type="number" id="uranocuantos" name="uranocuantos"><br>
+
+        <input type="checkbox" id="neptuno" name="neptuno" value="Neptuno">
+        <label for="neptuno">Neptuno</label>
+        <input type="number" id="neptunocuantos" name="neptunocuantos"><br>
+        
+        <input type="checkbox" id="plutón" name="plutón" value="Plutón">
+        <label for="plutón">Plutón</label>
+        <input type="number" id="plutóncuantos" name="plutóncuantos"><br>
+
+        <p>O elige uno de nuestros Paquetes</p>
+        <select name="Paquetes" id="Paquetes">
+            <option value="select">Select</option>
+            <option value="Osa Menor">Osa Menor</option>
+            <option value="Osa Mayor">Osa Mayor</option>
+            <option value="Andromeda">Andromeda</option>
+            <option value="Lira">Lira</option>
+        </select>
+        <br><br>
+        <p>¿Para acompañar?</p>
+        <select name="Leche" id="Leche">
+            <option value="select">Select</option>
+            <option value="Chocolate">Chocolate</option>
+            <option value="Vainilla">Vainilla</option>
+            <option value="Fresa">Fresa</option>
+            <option value="Natural">Natural</option>
+        </select>
+        <br><br>
+        <select name="Capucciono" id="Capucciono">
+            <option value="select">Select</option>
+            <option value="Moka">Moka</option>
+            <option value="Original">Original</option>
+            <option value="Caramelo">Caramelo</option>
+        </select>
+        <br><br>
+        <select name="Café" id="Café">
+            <option value="select">Select</option>
+            <option value="Americano">Americano</option>
+            <option value="Original">Original</option>
+            <option value="Expresso">Expresso</option>
+        </select>
+
+
+        <br><br>
+
+        <input type="reset">
+        <input type="submit">
+
+        <br><br>
+
+    </form>
+
+</body>
+</html>
